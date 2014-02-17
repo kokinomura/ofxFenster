@@ -34,7 +34,7 @@ ofxFensterManager* ofxFensterManager::instance = NULL;
 
 void ofxFensterManager::setup(int w, int h, int screenMode) {
 	ofxFensterManager* manager = get();
-	ofSetupOpenGL(manager->getMainWindow(), w, h,OF_WINDOW);			// <-------- setup the GL context
+	ofSetupOpenGL(manager->getMainWindow(), w, h, screenMode);			// <-------- setup the GL context
 	ofGLReadyCallback();
 }
 
